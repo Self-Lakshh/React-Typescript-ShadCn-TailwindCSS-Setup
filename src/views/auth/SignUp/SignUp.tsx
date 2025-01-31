@@ -3,7 +3,6 @@ import Alert from '@/components/ui/Alert'
 import SignUpForm from './components/SignUpForm'
 import ActionLink from '@/components/shared/ActionLink'
 import useTimeOutMessage from '@/utils/hooks/useTimeOutMessage'
-import { useThemeStore } from '@/store/themeStore'
 
 type SignUpProps = {
     disableSubmit?: boolean
@@ -15,8 +14,6 @@ export const SignUpBase = ({
     disableSubmit,
 }: SignUpProps) => {
     const [message, setMessage] = useTimeOutMessage()
-
-    const mode = useThemeStore(state => state.mode)
 
     return (
         <>

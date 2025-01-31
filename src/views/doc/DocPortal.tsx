@@ -186,7 +186,7 @@ const DocPortal = () => {
                                     }
                                     return (
                                         <p key={idx} dangerouslySetInnerHTML={{
-                                            __html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\`(.*?)\`/g, '<code class="bg-gray-100 dark:bg-gray-950 px-1 py-0.5 rounded text-primary font-mono text-xs">$1</code>')
+                                            __html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/`(.*?)`/g, '<code class="bg-gray-100 dark:bg-gray-950 px-1 py-0.5 rounded text-primary font-mono text-xs">$1</code>')
                                         }} />
                                     )
                                 })}

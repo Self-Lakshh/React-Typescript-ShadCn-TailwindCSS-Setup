@@ -29,10 +29,7 @@ export const LayoutContext = createContext<LayoutContextProps | undefined>(
 
 const useLayout = (): LayoutContextProps => {
     const context = useContext(LayoutContext)
-    if (!context) {
-        throw new Error('useLayout must be used within a LayoutProvider')
-    }
-    return context
+    return context || ({} as LayoutContextProps)
 }
 
 export default useLayout

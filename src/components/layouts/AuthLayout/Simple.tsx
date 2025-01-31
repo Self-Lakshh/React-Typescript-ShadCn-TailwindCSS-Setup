@@ -1,5 +1,4 @@
 import { cloneElement } from 'react'
-import Container from '@/components/shared/Container'
 import type { ReactNode, ReactElement } from 'react'
 import type { CommonProps } from '@/@types/common'
 import { Link } from 'react-router-dom'
